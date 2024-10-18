@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/quotes.css">
+    <title>Programming Quotes</title>
+</head>
+
+<body>
+
+<h1>Programming Quotes</h1>
+
+<div>
+    <label for="id_category_selection">Programming category:</label>
+    <select name="category" id="id_category_selection">
+        <option disabled selected>Please select a programming category</option>
+        <option>bugs</option>
+        <option>commenting</option>
+        <option>complexity</option>
+        <option>computer science</option>
+        <option>computers</option>
+        <option>debugging</option>
+        <option>estimating</option>
+        <option>functions</option>
+        <option>ideas</option>
+        <option>javascript</option>
+<!--
+TODO: add the following options for programming categories
+languages
+management
+oop
+planning
+productivity
+programmers
+programming
+refactoring
+reusing
+software
+specification
+users
+-->
+    </select>
+</div>
+
+<div>
+    <label for="id_number_of_quotes">Please select the number of programming quotes to retrieve:</label>
+    <select name="count" id="id_number_of_quotes">
+        <option>1</option>
+        <option selected>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+</div>
+
+<div>
+    <button id="id_button_retrieve_programming_quotes" onclick="handleButtonRetrieveProgrammingQuotes()">Retrieve Programming Quotes</button>
+</div>
+
+<div id="id_div_list_of_programming_quotes">
+    TBD, the programming quotes retrieved from the server will be displayed here.
+</div>
+
+
+<script src="js/quotes.js"></script>
+
+<hr>
+
+<p id="id_acknowledgement">
+    <span id="id_acknowledgement_span">Acknowledgement</span>: the source of these programming quotes is the
+    <a href="https://github.com/daviferreira/defprogramming.com" target="_blank">GitHub repository for defprogramming.com</a>.
+</p>
+
+</body>
+
+</html>
