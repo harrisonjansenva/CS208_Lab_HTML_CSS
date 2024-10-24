@@ -7,3 +7,7 @@
 #id_acknowledgement_span {
     font-weight: bold;
 }
+.failure {
+    color: red;
+}
+
