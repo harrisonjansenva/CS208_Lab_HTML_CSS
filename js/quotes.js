@@ -20,14 +20,14 @@ async function handleButtonRetrieveProgrammingQuotes()
 
 function displayQuotes(listOfProgrammingQuotes) {
     console.log(`displayQuotes - START`)
-    div_list_of_programming_quotes.innerHTML="<ul>"
+    div_list_of_programming_quotes.innerHTML="";
     for (const quote of listOfProgrammingQuotes) {
         console.log({quote});
         div_list_of_programming_quotes.innerHTML+=`
         <li>${quote.body} - ${quote.authors}</li>`;
 
     }
-     div_list_of_programming_quotes.innerHTML+="</ul>";
+     div_list_of_programming_quotes.innerHTML="<ul>" + div_list_of_programming_quotes.innerHTML + "</ul>";
 
 }
 
