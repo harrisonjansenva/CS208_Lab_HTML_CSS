@@ -2,5 +2,58 @@
 
 body { /* feel free to make any changes to the body if you want */
     font-family: Arial, sans-serif;
-    background-color: #fbfbfb;
+    background-color: whitesmoke;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+form {
+    max-width: 600px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 10px 20px; /* Space between rows and columns */
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc; /* : Add a border */
+    border-radius: 8px; /* : Round the corners */
+    background-color: #f9f9f9;
+
+}
+
+label {
+    margin-right: 10px;
+    text-align: right;
+    /*width: 150px;*/
+}
+input, select {
+    box-sizing: border-box;
+    width: 100%;
+
+}
+h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 20px;
+}
+/* Center the submit button */
+input[type="submit"] {
+    grid-column: 1 / -1; /* Make the submit button span both columns */
+    justify-self: center; /* Center the button horizontally */
+    padding: 10px 20px; /* : Add padding for better appearance */
+    background-color: #007BFF; /* : Button color */
+    color: white; /* : Text color */
+    border-radius: 5px; /* : Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+}
+input[type="text"]:hover {
+    background: honeydew;
+    border: 2px blue;
+}
+button:hover {
+    border: 2px solid blue;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3; /* : Darker color on hover */
 }

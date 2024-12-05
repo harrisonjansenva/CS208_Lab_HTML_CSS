@@ -11,9 +11,171 @@
 
 <body>
 
-<h1>Form for TBD</h1>
-<!-- TODO: Design and implement your form here. -->
-<!-- TODO: After that, style the form with css rules that you will write in css/style.css -->
+<h1>Form for Shipping for the Holidays:</h1>
+<h2>Shipping From:</h2>
+<div>
+    <form id="shippingForm" action="https://cs208-echo-form-parameters-8c190b63bc54.herokuapp.com" method="post">
+        <p>
+            <label for="firstName">First Name:</label>
+            <input class="leftForm" type="text" id="firstName" name="firstName" placeholder="First Name" required>
+            <label for="lastName">Last Name:</label>
+            <input class="leftForm" type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        </p>
+        <p>
+            <label for="email">Email Address:</label>
+            <input class="leftForm" type="email" id="email" name="email" placeholder="Email Address" required>
+            <label for="phoneNumber">Phone Number:</label>
+            <input class="leftForm" type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+        </p>
+        <p>
+            <label for="address">Address:</label>
+            <input class="leftForm" type="text" id="address" name="address" placeholder="Address"
+                   autocomplete="street-address" required>
+
+            <label for="city">City:</label>
+            <input class="leftForm" type="text" id="city" name="city" placeholder="City" autocomplete="address-level2"
+                   required>
+        </p>
+        <p>
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select>
+            <label for="zip">Zip Code:</label>
+            <input class="leftForm" type="text" id="zip" name="zip" placeholder="Zip Code" maxlength="5"
+                   autocomplete="postal-code" required>
+
+        </p>
+
+
+
+<h2>Shipping To:</h2>
+
+
+    <p>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="toFirstName" name="toFirstName" placeholder="First Name" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="toLastName" name="toLastName" placeholder="Last Name" required>
+    </p>
+    <p>
+        <label for="toAddress">Address:</label>
+        <input type="text" id="toAddress" name="toAddress" placeholder="Address" required>
+        <label for="toCity">City:</label>
+        <input type="text" id="toCity" name="toCity" placeholder="City" required>
+    </p>
+    <p>
+
+        <label for="toState">State:</label>
+        <select id="toState" name="toState">
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+        </select>
+        <label for="toZip">Zip Code:</label>
+        <input type="text" id="toZip" name="toZip" placeholder="Zip Code" maxlength="5" required>
+    </p>
+    <input type="submit" value="Submit">
+    </form>
+</div>
 
 
 

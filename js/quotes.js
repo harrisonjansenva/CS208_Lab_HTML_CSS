@@ -35,7 +35,7 @@ async function getAndDisplayAllQuotes(category, count)
 {
     console.log('getAndDisplayAllQuotes - START');
 
-    // TODO: update the API URL to include the values of the category and count
+
     const API_URL = `https://cs208-programming-quotes-ff89e28d2421.herokuapp.com/api/quotes?category=${category}&count=${count}`;
 
     div_list_of_programming_quotes.innerHTML = "Calling the API to get the list of quotes...";
@@ -61,11 +61,7 @@ async function getAndDisplayAllQuotes(category, count)
            div_list_of_programming_quotes.innerHTML = "<p class='failure'>Error: the quotes could not be found.</p>";
        }
 
-        // TODO: use the fetch API to call the API_URL
 
-        // TODO: check if the response is OK and then process the JSON response and display the quotes in the div_list_of_programming_quotes.innerHTML
-
-        // TODO: if the response is not OK, then display an error message in the div_list_of_programming_quotes.innerHTML
     }
     catch (error)
     {
